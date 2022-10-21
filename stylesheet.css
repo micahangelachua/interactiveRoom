@@ -1,0 +1,99 @@
+body {
+   background-color: teal ;
+   width: 100%;
+}
+
+.clock {
+   position: relative;
+   font-family: 'Courier New', Courier, monospace;
+   background-color: white;
+   width: 250px;
+   height: 250px;
+   border: 5px solid black;
+   border-radius: 50%;
+}
+
+.hand {
+   position: absolute;
+   bottom: 50%;
+   border: 3px solid blue;
+   
+}
+
+.hour {
+   width: 8px;
+   height: 45%;
+   background-color: darkgray;
+   --rotation: 0;
+   transform: translateX(50) rotate(calc(var(--rotation)) * 1deg);
+}
+
+.minute {
+   width: 8px;
+   height: 50%;
+   background-color: black;
+}
+
+.second{
+   width: 5px;
+   height: 50%;
+   background-color: red;
+}
+
+.number {
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   text-align: center;
+   transform: rotate(var(--rotation));
+   padding-top: 3px;
+   font-weight: 600;
+}
+
+.number1{
+   --rotation:30deg;
+}
+
+.number2{
+   --rotation:60deg;
+}
+
+.number3{
+   --rotation:90deg;
+}
+
+.number4{
+   --rotation:120deg;
+}
+
+.number5{
+   --rotation:150deg;
+}
+
+.number6{
+   --rotation:180deg;
+}
+
+.number7{
+   --rotation:210deg;
+}
+
+.number8{
+   --rotation:240deg;
+}
+
+.number9{
+   --rotation:270deg;
+}
+
+.number10{
+   --rotation:300deg;
+}
+
+.number11{
+   --rotation:330deg;
+}
+
+.number12{
+   --rotation:360deg;
+}
